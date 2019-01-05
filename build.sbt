@@ -1,7 +1,12 @@
-name := "ProjetScala"
-
-version := "0.1"
-
-scalaVersion := "2.12.8"
-
-libraryDependencies += "org.apache.logging.log4j" % "log4j-api-scala_2.11" % "11.0"
+lazy val `Mower` = (project in file(".")).
+  settings(
+    inThisBuild(List(
+      organization := "fr/upem",
+      scalaVersion := "2.12.8",
+      version := "1.0.0",
+      scalacOptions += "-Ypartial-unification"
+    )),
+    name := "ProjetScala",
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % Test,
+    libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.14.0" % Test
+  )

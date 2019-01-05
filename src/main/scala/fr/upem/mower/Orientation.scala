@@ -1,12 +1,13 @@
-package fr.upem.orientation
+package fr.upem.mower
 
+sealed trait Orientation
 object Orientation{
-  sealed trait Orientation
   case object N extends Orientation
   case object E extends Orientation
   case object W extends Orientation
   case object S extends Orientation
 
+  //rotation to the right
   def rotateD(orientation: Orientation) :Option[Orientation]= {
     orientation match {
       case N => Some(E)
@@ -17,6 +18,7 @@ object Orientation{
     }
   }
 
+  //rotation to the left
   def rotateG(orientation: Orientation) :Option[Orientation]= {
     orientation match {
       case N => Some(W)

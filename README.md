@@ -35,7 +35,7 @@ Le fichier ainsi fait retournera :
     X :0 Y :3 E
 
 Les coordonnées finales des 3 tondeuses disposées sur la pelouse.
-Le parser lit le fichier et en même temps run les tondeuses les unes après les autres et les affiches.
+Le parser lit le fichier tout en plaçant et exécutant les tondeuses les unes après les autres, puis les affiches.
 
 Ce projet utilise SBT.
 

@@ -48,3 +48,4 @@ Ce projet utilise SBT.
     Pour tester :
     > sbt test
 
+Par Delver Jordan
